@@ -90,7 +90,7 @@ img { display: block; max-width: 100%; }
 .nav-links a:hover { color: var(--text); }
 .nav-right { display: flex; align-items: center; gap: 1.4rem; }
 .logo { color: var(--accent); }
-.logo-img { height: 56px; width: auto; transition: opacity 0.3s; }
+.logo-img { height: 46px; width: auto; transition: opacity 0.3s; }
 .logo:hover .logo-img { opacity: 0.7; }
 
 .burger {
