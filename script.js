@@ -20,30 +20,29 @@ navLinks.querySelectorAll('a').forEach(link =>
   })
 );
 
-// ===== Reveal on scroll =====
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
+// ===== Reveal on scroll (robust, no IntersectionObserver needed) =====
+function inViewport(el) {
+  const r = el.getBoundingClientRect();
+  return r.top < window.innerHeight * 0.92 && r.bottom > 0;
+}
+
+function reveal() {
+  document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
+    if (inViewport(el)) el.classList.add('visible');
+  });
+  document.querySelectorAll('.bar-fill:not(.done)').forEach(el => {
+    if (inViewport(el)) {
+      el.classList.add('done');
+      el.style.width = el.dataset.width + '%';
     }
   });
-}, { threshold: 0.15 });
+}
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-// ===== Skill bars animate when visible =====
-const barObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const fill = entry.target;
-      fill.style.width = fill.dataset.width + '%';
-      barObserver.unobserve(fill);
-    }
-  });
-}, { threshold: 0.4 });
-
-document.querySelectorAll('.bar-fill').forEach(el => barObserver.observe(el));
+window.addEventListener('scroll', reveal, { passive: true });
+window.addEventListener('resize', reveal, { passive: true });
+window.addEventListener('load', reveal);
+document.addEventListener('visibilitychange', reveal);
+reveal();
 
 // ===== Imprint / Privacy modals =====
 document.querySelectorAll('[data-modal]').forEach(btn =>
@@ -52,7 +51,6 @@ document.querySelectorAll('[data-modal]').forEach(btn =>
 
 document.querySelectorAll('dialog').forEach(dialog => {
   dialog.querySelector('.modal-close').addEventListener('click', () => dialog.close());
-  // close when clicking the backdrop
   dialog.addEventListener('click', e => {
     if (e.target === dialog) dialog.close();
   });
