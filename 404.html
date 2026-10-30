@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Page not found — Anton Janis Thomsen</title>
+<link rel="icon" href="/favicon.png" type="image/png">
+<style>
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('/fonts/inter-latin-300-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/inter-latin-500-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/space-grotesk-latin-600-normal.woff2') format('woff2'); }
+
+  :root { --bg: #0a0a0a; --text: #f5f5f5; --muted: #9a9a9a; --line: #262626; --accent: #fff; --ease: cubic-bezier(.22, 1, .36, 1); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    min-height: 100vh; min-height: 100svh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 2rem 1.4rem;
+    background: var(--bg); color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif; font-weight: 300; line-height: 1.7;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 560px; animation: fadeUp 0.9s var(--ease) both; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  img { display: block; width: 140px; height: 140px; margin: 0 auto 1.6rem; }
+  .label { font-size: 0.8rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.8rem; }
+  h1 { font-family: 'Space Grotesk', 'Inter', sans-serif; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; font-size: clamp(2.4rem, 9vw, 4rem); margin-bottom: 1.2rem; }
+  p.sub { color: var(--muted); font-size: 1.05rem; margin-bottom: 2.4rem; }
+  .actions { display: flex; flex-direction: column; align-items: center; gap: 1.1rem; }
+  .btn {
+    display: inline-block; padding: 0.9rem 2.2rem; border-radius: 999px;
+    background: var(--accent); color: var(--bg);
+    font-weight: 500; font-size: 0.95rem; letter-spacing: 0.02em; text-decoration: none;
+    transition: transform 0.3s var(--ease), background 0.3s;
+  }
+  .btn:hover { background: #e2e2e2; transform: translateY(-2px); }
+  .link { color: var(--muted); font-size: 0.9rem; letter-spacing: 0.04em; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; transition: color 0.3s, border-color 0.3s; }
+  .link:hover { color: var(--text); border-bottom-color: var(--accent); }
+  .btn:focus-visible, .link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) { main { animation: none; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <img src="/logo-white.png" alt="AJT logo of Anton Janis Thomsen">
+  <p class="label">Error 404</p>
+  <h1>Lost the line.</h1>
+  <p class="sub">This page doesn't exist — but the rest of the site does.</p>
+  <div class="actions">
+    <a href="/" class="btn">Back home</a>
+    <a href="/#contact" class="link">Get in touch</a>
+  </div>
+</main>
+</body>
+</html>

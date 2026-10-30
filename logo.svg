@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+  <!-- shoulders -->
+  <path d="M8 132 C 26 106, 38 100, 47 96"/>
+  <path d="M112 132 C 94 106, 82 100, 73 96"/>
+  <!-- collar -->
+  <path d="M47 96 q 13 9 26 0"/>
+  <!-- neck -->
+  <path d="M50 74 C 50 84, 49 91, 47 96"/>
+  <path d="M70 76 C 70 84, 71 91, 73 96"/>
+  <!-- face contour (right side + chin) -->
+  <path d="M77 40 C 80 52, 78 64, 70 74 C 66 78, 60 79, 56 76"/>
+  <!-- left cheek hint -->
+  <path d="M42 50 C 41 58, 43 66, 47 71"/>
+  <!-- closed eyes -->
+  <path d="M47 50 q 4.5 -2.5 9 0"/>
+  <path d="M65 50 q 4 -2.5 8 0"/>
+  <!-- nose -->
+  <path d="M59 52 l -2.5 9 q -1 3.5 3 4"/>
+  <!-- mouth -->
+  <path d="M56 72 q 4.5 2.5 9 0"/>
+  <!-- hair: outer mass -->
+  <path d="M42 50 C 31 45, 28 30, 38 19 C 47 9, 64 6, 74 12 C 84 18, 87 31, 77 40"/>
+  <!-- hair: curls -->
+  <path d="M38 26 a 6 6 0 1 1 8 6"/>
+  <path d="M48 14 a 6.5 6.5 0 1 1 9 5"/>
+  <path d="M62 10 a 6 6 0 1 1 9 5"/>
+  <path d="M72 22 a 5.5 5.5 0 1 1 6 6"/>
+  <path d="M46 38 a 5 5 0 1 1 7 4"/>
+  <path d="M58 30 a 5.5 5.5 0 1 1 7 5"/>
+  <path d="M68 38 a 4.5 4.5 0 1 1 6 4"/>
+  <!-- wordmark -->
+  <text x="63" y="148" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="7" fill="currentColor" stroke="none">AJJ</text>
+</svg>
