@@ -92,14 +92,14 @@ const I18N = {
     'contact.copied': 'Copied',
     'contact.foot': 'Anton Janis Thomsen / Hamburg, Munich, Germany',
 
-    'footer.imprint': 'Imprint',
+    'footer.imprint': 'About this site',
     'footer.privacy': 'Privacy',
     'footer.mail': 'Mail',
     'footer.copy': '&copy; 2026 Anton Janis Thomsen. Built by Anton Janis Thomsen.',
     'modal.close': 'Close',
-    'imprint.title': 'Imprint',
-    'imprint.p': 'Anton Janis Theodor Thomsen<br>Hamburg, Germany<br>antonjanis.thomsen@gmail.com',
-    'imprint.note': 'Responsible for content according to &sect; 5 TMG.'
+    'imprint.title': 'About this site',
+    'imprint.p': 'Anton Janis Theodor Thomsen<br>Hamburg / Munich, Germany<br>antonjanis.thomsen@gmail.com',
+    'imprint.note': 'This is a private, non-commercial personal website. No goods or services are offered here.'
   },
 
   de: {
@@ -194,13 +194,13 @@ const I18N = {
     'contact.copied': 'Kopiert',
     'contact.foot': 'Anton Janis Thomsen / Hamburg, München, Deutschland',
 
-    'footer.imprint': 'Impressum',
+    'footer.imprint': 'Über diese Seite',
     'footer.privacy': 'Datenschutz',
     'footer.mail': 'E-Mail',
     'footer.copy': '&copy; 2026 Anton Janis Thomsen. Gebaut von Anton Janis Thomsen.',
     'modal.close': 'Schließen',
-    'imprint.title': 'Impressum',
-    'imprint.p': 'Anton Janis Theodor Thomsen<br>Hamburg, Deutschland<br>antonjanis.thomsen@gmail.com',
-    'imprint.note': 'Verantwortlich für den Inhalt nach &sect; 5 TMG.'
+    'imprint.title': 'Über diese Seite',
+    'imprint.p': 'Anton Janis Theodor Thomsen<br>Hamburg / München, Deutschland<br>antonjanis.thomsen@gmail.com',
+    'imprint.note': 'Dies ist eine private, nicht-kommerzielle Website. Hier werden keine Waren oder Dienstleistungen angeboten.'
   }
 };

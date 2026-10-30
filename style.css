@@ -674,3 +674,6 @@ dialog p { color: var(--muted); font-size: 0.95rem; margin-bottom: 0.8rem; }
   /* Never split an entry across pages */
   .timeline-item, .card, .stat, .skills-block, .skill-bar, .about-text, .about-stats { break-inside: avoid; }
 }
+
+/* Force text arrows (iOS would otherwise render ↗ as an emoji) */
+.arrow { font-variant-emoji: text; font-family: "Inter", system-ui, sans-serif; }
